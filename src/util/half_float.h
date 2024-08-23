@@ -62,7 +62,7 @@ _mesa_half_is_negative(uint16_t h)
 }
 
 
-#ifdef __cplusplus
+#if defined(__cplusplus) && !defined(__STDCPP_FLOAT16_T__)
 
 /* Helper class for disambiguating fp16 from uint16_t in C++ overloads */
 
